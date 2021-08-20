@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="1dp"
+    app:strokeWidth="2dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_view_project_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:adjustViewBounds="false"
+            android:background="@drawable/vivo_watermark_pictureunlock_glc_49830_user0_pictureunlock"
+            android:cropToPadding="false"
+            android:src="" />
+
+        <TextView
+            android:layout_alignTop="@id/image_view_project_icon"
+            android:id="@+id/text_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image_view_project_icon"
+            android:fontFamily="sans-serif-black"
+            android:lineSpacingExtra="10sp"
+            android:text="The Black Diamond "
+            android:textAlignment="center"
+            android:textColor="#00BCD4"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+
+        <TextView
+            android:id="@+id/text_view_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_title"
+            android:layout_toEndOf="@id/image_view_project_icon"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="8sp"
+            android:text="In the splashy corridors and comfy rooms with cozy windows an idea is hatched "
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/teal_700"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:typeface="normal"
+            android:visibility="visible"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
